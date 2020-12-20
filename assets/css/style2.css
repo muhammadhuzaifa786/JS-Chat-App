@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.btnblue {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btngrey {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, grey, grey, grey);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-position: right;
+}
+
+.social-btn .btn {
+    border: none;
+    margin: 10px 3px 0;
+    opacity: 1;
+}
+
+.social-btn .btn:hover {
+    opacity: 0.9;
+}
+
+.social-btn .btn-secondary,
+.social-btn .btn-secondary:active {
+    background: #507cc0 !important;
+}
+
+.social-btn .btn-info,
+.social-btn .btn-info:active {
+    background: #64ccf1 !important;
+}
+
+.social-btn .btn-danger,
+.social-btn .btn-danger:active {
+    background: #df4930 !important;
+}
+
+.or-seperator {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.or-seperator i {
+    padding: 0 10px;
+    position: relative;
+    top: -11px;
+    z-index: 1;
+}
+
+.containers {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f1f0e8;
+}
+
+.chat-header {
+    display: flex;
+    cursor: pointer;
+}
+
+.profile {
+    width: 100%;
+    background: #036055;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.profile .arrow {
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+}
+
+.profile .pp {
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.profile h2 {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 20px;
+}
+
+.profile span {
+    color: #ccc;
+    position: absolute;
+    top: 42px;
+    left: 100px;
+    font-size: 14px;
+}
+
+.right .icon {
+    display: inline-block;
+    width: 25px;
+    margin-left: 10px;
+}
+
+.profile .left {
+    flex: 1;
+}
+
+.chat-box {
+    background: url('../img/bg.jpeg');
+    background-attachment: fixed;
+    padding-left: 20px;
+    overflow-y: scroll;
+    flex: 1;
+}
+
+.chat-box .img_chat {
+    width: 280px;
+}
+
+.chat-r {
+    display: flex;
+}
+
+.chat-r .sp {
+    flex: 1;
+}
+
+.chat-l {
+    display: flex;
+}
+
+.chat-l .sp {
+    flex: 1;
+}
+
+.chat-box .mess {
+    max-width: 350px;
+    background: #F7FCF6;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.chat-box .mess p {
+    word-break: break-all;
+    font-size: 18px;
+}
+
+.chat-box .mess-r {
+    background: #E2FFC7;
+    margin-right: 10px;
+}
+
+.chat-box .emoji {
+    width: 20px;
+}
+
+.chat-box .check {
+    float: right;
+}
+
+.chat-box .check img {
+    width: 20px;
+}
+
+.chat-box .check span {
+    color: #888;
+    font-size: 12px;
+    font-weight: 700px;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.chat-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.chat-footer textarea {
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    border-radius: 60px;
+    margin: 5px;
+    padding: 10px;
+    outline: none;
+    font-size: 19px;
+    padding-left: 40px;
+    padding-right: 90px;
+    border: 2px solid #ccc;
+    color: #555;
+    resize: none;
+}
+
+.chat-footer .mic {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+.chat-footer .emo {
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.chat-footer .icons {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.chat-footer .icons img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+#selectedUser {
+    margin-top: -70px;
+    margin-left: 1px;
+}
+
+@media only screen and (max-width: 400px) {
+    .removeuser {
+        display: none;
+    }
+    .remove-user {
+        display: none;
+    }
+    .onlinetag {
+        display: block;
+    }
+    .margin-user {
+        margin-top: 12px;
+        margin-left: 1px;
+    }
+}
+
+
+/* @media screen and (max-width: 1050px) {
+    .right .icon {
+        display: inline-block;
+        width: 15px;
+        margin-left: 3px;
+    }
+    .chat-footer .icons {
+        position: absolute;
+        right: 100px;
+        top: 10px;
+    }
+    .chat-footer .icons img {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+    }
+    .class,
+    .pp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .right .icon {
+        display: inline-block;
+        width: 15px;
+        margin-left: 3px;
+    }
+    .chat-footer .icons {
+        position: absolute;
+        right: 100px;
+        top: 10px;
+    }
+    .chat-footer .icons img {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+    }
+    .class,
+    .pp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .right .icon {
+        display: inline-block;
+        width: 15px;
+        margin-left: 3px;
+    }
+    .chat-footer .icons {
+        position: absolute;
+        right: 100px;
+        top: 10px;
+    }
+    .chat-footer .icons img {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+    }
+    .class,
+    .pp {
+        display: none;
+    }
+} */
